@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5211A618284930E6000C7CF5 /* simple-mtpfs-type-file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5211A602284930E5000C7CF5 /* simple-mtpfs-type-file.cpp */; };
+		5211A619284930E6000C7CF5 /* simple-mtpfs-util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5211A605284930E5000C7CF5 /* simple-mtpfs-util.cpp */; };
+		5211A61A284930E6000C7CF5 /* simple-mtpfs-tmp-files-pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5211A60A284930E5000C7CF5 /* simple-mtpfs-tmp-files-pool.cpp */; };
+		5211A61B284930E6000C7CF5 /* simple-mtpfs-kfs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5211A60D284930E6000C7CF5 /* simple-mtpfs-kfs.cpp */; };
+		5211A61C284930E6000C7CF5 /* simple-mtpfs-type-tmp-file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5211A60E284930E6000C7CF5 /* simple-mtpfs-type-tmp-file.cpp */; };
+		5211A61D284930E6000C7CF5 /* simple-mtpfs-log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5211A610284930E6000C7CF5 /* simple-mtpfs-log.cpp */; };
+		5211A61E284930E6000C7CF5 /* simple-mtpfs-mtp-device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5211A611284930E6000C7CF5 /* simple-mtpfs-mtp-device.cpp */; };
+		5211A61F284930E6000C7CF5 /* simple-mtpfs-main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5211A613284930E6000C7CF5 /* simple-mtpfs-main.cpp */; };
+		5211A620284930E6000C7CF5 /* simple-mtpfs-sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5211A614284930E6000C7CF5 /* simple-mtpfs-sha1.cpp */; };
+		5211A621284930E6000C7CF5 /* simple-mtpfs-libmtp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5211A615284930E6000C7CF5 /* simple-mtpfs-libmtp.cpp */; };
+		5211A622284930E6000C7CF5 /* simple-mtpfs-type-dir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5211A617284930E6000C7CF5 /* simple-mtpfs-type-dir.cpp */; };
+		5211A64428493119000C7CF5 /* libusb-glue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A62C28493119000C7CF5 /* libusb-glue.h */; };
+		5211A64628493119000C7CF5 /* gphoto2-endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A62E28493119000C7CF5 /* gphoto2-endian.h */; };
+		5211A64828493119000C7CF5 /* unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5211A63028493119000C7CF5 /* unicode.c */; };
+		5211A64928493119000C7CF5 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 5211A63128493119000C7CF5 /* util.c */; };
+		5211A64A28493119000C7CF5 /* libmtp.c in Sources */ = {isa = PBXBuildFile; fileRef = 5211A63228493119000C7CF5 /* libmtp.c */; };
+		5211A64B28493119000C7CF5 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A63328493119000C7CF5 /* config.h */; };
+		5211A64C28493119000C7CF5 /* playlist-spl.c in Sources */ = {isa = PBXBuildFile; fileRef = 5211A63428493119000C7CF5 /* playlist-spl.c */; };
+		5211A64D28493119000C7CF5 /* libusb1-glue.c in Sources */ = {isa = PBXBuildFile; fileRef = 5211A63528493119000C7CF5 /* libusb1-glue.c */; };
+		5211A64E28493119000C7CF5 /* ptp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A63628493119000C7CF5 /* ptp.h */; };
+		5211A65028493119000C7CF5 /* chdk_live_view.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A63928493119000C7CF5 /* chdk_live_view.h */; };
+		5211A65128493119000C7CF5 /* unicode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A63A28493119000C7CF5 /* unicode.h */; };
+		5211A65228493119000C7CF5 /* music-players.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A63B28493119000C7CF5 /* music-players.h */; };
+		5211A65328493119000C7CF5 /* mtpz.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A63C28493119000C7CF5 /* mtpz.h */; };
+		5211A65528493119000C7CF5 /* playlist-spl.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A63E28493119000C7CF5 /* playlist-spl.h */; };
+		5211A65628493119000C7CF5 /* libmtp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A63F28493119000C7CF5 /* libmtp.h */; };
+		5211A65728493119000C7CF5 /* chdk_ptp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A64028493119000C7CF5 /* chdk_ptp.h */; };
+		5211A65828493119000C7CF5 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A64128493119000C7CF5 /* util.h */; };
+		5211A65928493119000C7CF5 /* ptp.c in Sources */ = {isa = PBXBuildFile; fileRef = 5211A64228493119000C7CF5 /* ptp.c */; };
+		5211A65A28493119000C7CF5 /* device-flags.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211A64328493119000C7CF5 /* device-flags.h */; };
+		5211A68228493317000C7CF5 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5211A66A2849320A000C7CF5 /* libusb-1.0.0.dylib */; };
+		5211A6832849331E000C7CF5 /* liblibmtp_xcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5211A62728493109000C7CF5 /* liblibmtp_xcode.a */; };
+		5211A68428493321000C7CF5 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5211A66A2849320A000C7CF5 /* libusb-1.0.0.dylib */; };
+		5211A692284933D5000C7CF5 /* KFS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5211A68D284933A9000C7CF5 /* KFS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5211A6692849320A000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A65B28493209000C7CF5 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008FBF311628B79300BC5BE2;
+			remoteInfo = libusb;
+		};
+		5211A66B2849320A000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A65B28493209000C7CF5 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008FBFF51628BB8B00BC5BE2;
+			remoteInfo = dpfp;
+		};
+		5211A66D2849320A000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A65B28493209000C7CF5 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008FC0051628BBDB00BC5BE2;
+			remoteInfo = dpfp_threaded;
+		};
+		5211A66F2849320A000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A65B28493209000C7CF5 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008FC0151628BC0300BC5BE2;
+			remoteInfo = fxload;
+		};
+		5211A6712849320A000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A65B28493209000C7CF5 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 006AD41C1C8C5A90007F8C6A;
+			remoteInfo = hotplugtest;
+		};
+		5211A6732849320A000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A65B28493209000C7CF5 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008FC0261628BC6B00BC5BE2;
+			remoteInfo = listdevs;
+		};
+		5211A6752849320A000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A65B28493209000C7CF5 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20468D67243298AE00650534;
+			remoteInfo = sam3u_benchmark;
+		};
+		5211A6772849320A000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A65B28493209000C7CF5 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008A23D3236C8594004854AA;
+			remoteInfo = stress;
+		};
+		5211A6792849320A000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A65B28493209000C7CF5 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20468D75243298D300650534;
+			remoteInfo = testlibusb;
+		};
+		5211A67B2849320A000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A65B28493209000C7CF5 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008FBFBD1628B9FE00BC5BE2;
+			remoteInfo = xusb;
+		};
+		5211A67D28493223000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A5F128493028000C7CF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5211A62628493109000C7CF5;
+			remoteInfo = libmtp_xcode;
+		};
+		5211A67F2849322F000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A65B28493209000C7CF5 /* libusb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 008FBF301628B79300BC5BE2;
+			remoteInfo = libusb;
+		};
+		5211A68C284933A9000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A687284933A9000C7CF5 /* KFS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B1DA2A812FB4A7400AD3459;
+			remoteInfo = KFS;
+		};
+		5211A68E284933A9000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A687284933A9000C7CF5 /* KFS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B5D063013116090000756AE;
+			remoteInfo = Test;
+		};
+		5211A690284933D0000C7CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5211A687284933A9000C7CF5 /* KFS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B1DA2A712FB4A7400AD3459;
+			remoteInfo = KFS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5211A5F728493029000C7CF5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5211A5F928493029000C7CF5 /* simple-mtpfs-kfs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "simple-mtpfs-kfs"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5211A602284930E5000C7CF5 /* simple-mtpfs-type-file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "simple-mtpfs-type-file.cpp"; sourceTree = "<group>"; };
+		5211A603284930E5000C7CF5 /* simple-mtpfs-type-dir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "simple-mtpfs-type-dir.h"; sourceTree = "<group>"; };
+		5211A604284930E5000C7CF5 /* simple-mtpfs-type-file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "simple-mtpfs-type-file.h"; sourceTree = "<group>"; };
+		5211A605284930E5000C7CF5 /* simple-mtpfs-util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "simple-mtpfs-util.cpp"; sourceTree = "<group>"; };
+		5211A606284930E5000C7CF5 /* simple-mtpfs-tmp-files-pool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "simple-mtpfs-tmp-files-pool.h"; sourceTree = "<group>"; };
+		5211A607284930E5000C7CF5 /* simple-mtpfs-libmtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "simple-mtpfs-libmtp.h"; sourceTree = "<group>"; };
+		5211A608284930E5000C7CF5 /* simple-mtpfs-mtp-device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "simple-mtpfs-mtp-device.h"; sourceTree = "<group>"; };
+		5211A609284930E5000C7CF5 /* simple-mtpfs-sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "simple-mtpfs-sha1.h"; sourceTree = "<group>"; };
+		5211A60A284930E5000C7CF5 /* simple-mtpfs-tmp-files-pool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "simple-mtpfs-tmp-files-pool.cpp"; sourceTree = "<group>"; };
+		5211A60B284930E5000C7CF5 /* simple-mtpfs-log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "simple-mtpfs-log.h"; sourceTree = "<group>"; };
+		5211A60C284930E5000C7CF5 /* simple-mtpfs-kfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "simple-mtpfs-kfs.h"; sourceTree = "<group>"; };
+		5211A60D284930E6000C7CF5 /* simple-mtpfs-kfs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "simple-mtpfs-kfs.cpp"; sourceTree = "<group>"; };
+		5211A60E284930E6000C7CF5 /* simple-mtpfs-type-tmp-file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "simple-mtpfs-type-tmp-file.cpp"; sourceTree = "<group>"; };
+		5211A60F284930E6000C7CF5 /* simple-mtpfs-type-tmp-file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "simple-mtpfs-type-tmp-file.h"; sourceTree = "<group>"; };
+		5211A610284930E6000C7CF5 /* simple-mtpfs-log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "simple-mtpfs-log.cpp"; sourceTree = "<group>"; };
+		5211A611284930E6000C7CF5 /* simple-mtpfs-mtp-device.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "simple-mtpfs-mtp-device.cpp"; sourceTree = "<group>"; };
+		5211A612284930E6000C7CF5 /* simple-mtpfs-util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "simple-mtpfs-util.h"; sourceTree = "<group>"; };
+		5211A613284930E6000C7CF5 /* simple-mtpfs-main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "simple-mtpfs-main.cpp"; sourceTree = "<group>"; };
+		5211A614284930E6000C7CF5 /* simple-mtpfs-sha1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "simple-mtpfs-sha1.cpp"; sourceTree = "<group>"; };
+		5211A615284930E6000C7CF5 /* simple-mtpfs-libmtp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "simple-mtpfs-libmtp.cpp"; sourceTree = "<group>"; };
+		5211A616284930E6000C7CF5 /* simple-mtpfs-type-basic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "simple-mtpfs-type-basic.h"; sourceTree = "<group>"; };
+		5211A617284930E6000C7CF5 /* simple-mtpfs-type-dir.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "simple-mtpfs-type-dir.cpp"; sourceTree = "<group>"; };
+		5211A62728493109000C7CF5 /* liblibmtp_xcode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibmtp_xcode.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5211A62C28493119000C7CF5 /* libusb-glue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libusb-glue.h"; sourceTree = "<group>"; };
+		5211A62D28493119000C7CF5 /* mtpz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mtpz.c; sourceTree = "<group>"; };
+		5211A62E28493119000C7CF5 /* gphoto2-endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gphoto2-endian.h"; sourceTree = "<group>"; };
+		5211A62F28493119000C7CF5 /* libopenusb1-glue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "libopenusb1-glue.c"; sourceTree = "<group>"; };
+		5211A63028493119000C7CF5 /* unicode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unicode.c; sourceTree = "<group>"; };
+		5211A63128493119000C7CF5 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		5211A63228493119000C7CF5 /* libmtp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libmtp.c; sourceTree = "<group>"; };
+		5211A63328493119000C7CF5 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		5211A63428493119000C7CF5 /* playlist-spl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "playlist-spl.c"; sourceTree = "<group>"; };
+		5211A63528493119000C7CF5 /* libusb1-glue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "libusb1-glue.c"; sourceTree = "<group>"; };
+		5211A63628493119000C7CF5 /* ptp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptp.h; sourceTree = "<group>"; };
+		5211A63728493119000C7CF5 /* ptp-pack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "ptp-pack.c"; sourceTree = "<group>"; };
+		5211A63828493119000C7CF5 /* libmtp.sym */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libmtp.sym; sourceTree = "<group>"; };
+		5211A63928493119000C7CF5 /* chdk_live_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chdk_live_view.h; sourceTree = "<group>"; };
+		5211A63A28493119000C7CF5 /* unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unicode.h; sourceTree = "<group>"; };
+		5211A63B28493119000C7CF5 /* music-players.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "music-players.h"; sourceTree = "<group>"; };
+		5211A63C28493119000C7CF5 /* mtpz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mtpz.h; sourceTree = "<group>"; };
+		5211A63D28493119000C7CF5 /* libusb-glue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "libusb-glue.c"; sourceTree = "<group>"; };
+		5211A63E28493119000C7CF5 /* playlist-spl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "playlist-spl.h"; sourceTree = "<group>"; };
+		5211A63F28493119000C7CF5 /* libmtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libmtp.h; sourceTree = "<group>"; };
+		5211A64028493119000C7CF5 /* chdk_ptp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chdk_ptp.h; sourceTree = "<group>"; };
+		5211A64128493119000C7CF5 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		5211A64228493119000C7CF5 /* ptp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ptp.c; sourceTree = "<group>"; };
+		5211A64328493119000C7CF5 /* device-flags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "device-flags.h"; sourceTree = "<group>"; };
+		5211A65B28493209000C7CF5 /* libusb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libusb.xcodeproj; path = libusb/Xcode/libusb.xcodeproj; sourceTree = "<group>"; };
+		5211A687284933A9000C7CF5 /* KFS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KFS.xcodeproj; path = kfs/KFS.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5211A5F628493029000C7CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5211A692284933D5000C7CF5 /* KFS.framework in Frameworks */,
+				5211A68428493321000C7CF5 /* libusb-1.0.0.dylib in Frameworks */,
+				5211A6832849331E000C7CF5 /* liblibmtp_xcode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5211A62528493109000C7CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5211A68228493317000C7CF5 /* libusb-1.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5211A5F028493028000C7CF5 = {
+			isa = PBXGroup;
+			children = (
+				5211A687284933A9000C7CF5 /* KFS.xcodeproj */,
+				5211A65B28493209000C7CF5 /* libusb.xcodeproj */,
+				5211A62B28493119000C7CF5 /* libmtp */,
+				5211A5FB28493029000C7CF5 /* simple-mtpfs-kfs */,
+				5211A5FA28493029000C7CF5 /* Products */,
+				5211A68128493317000C7CF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5211A5FA28493029000C7CF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5211A5F928493029000C7CF5 /* simple-mtpfs-kfs */,
+				5211A62728493109000C7CF5 /* liblibmtp_xcode.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5211A5FB28493029000C7CF5 /* simple-mtpfs-kfs */ = {
+			isa = PBXGroup;
+			children = (
+				5211A60D284930E6000C7CF5 /* simple-mtpfs-kfs.cpp */,
+				5211A60C284930E5000C7CF5 /* simple-mtpfs-kfs.h */,
+				5211A615284930E6000C7CF5 /* simple-mtpfs-libmtp.cpp */,
+				5211A607284930E5000C7CF5 /* simple-mtpfs-libmtp.h */,
+				5211A610284930E6000C7CF5 /* simple-mtpfs-log.cpp */,
+				5211A60B284930E5000C7CF5 /* simple-mtpfs-log.h */,
+				5211A613284930E6000C7CF5 /* simple-mtpfs-main.cpp */,
+				5211A611284930E6000C7CF5 /* simple-mtpfs-mtp-device.cpp */,
+				5211A608284930E5000C7CF5 /* simple-mtpfs-mtp-device.h */,
+				5211A614284930E6000C7CF5 /* simple-mtpfs-sha1.cpp */,
+				5211A609284930E5000C7CF5 /* simple-mtpfs-sha1.h */,
+				5211A60A284930E5000C7CF5 /* simple-mtpfs-tmp-files-pool.cpp */,
+				5211A606284930E5000C7CF5 /* simple-mtpfs-tmp-files-pool.h */,
+				5211A616284930E6000C7CF5 /* simple-mtpfs-type-basic.h */,
+				5211A617284930E6000C7CF5 /* simple-mtpfs-type-dir.cpp */,
+				5211A603284930E5000C7CF5 /* simple-mtpfs-type-dir.h */,
+				5211A602284930E5000C7CF5 /* simple-mtpfs-type-file.cpp */,
+				5211A604284930E5000C7CF5 /* simple-mtpfs-type-file.h */,
+				5211A60E284930E6000C7CF5 /* simple-mtpfs-type-tmp-file.cpp */,
+				5211A60F284930E6000C7CF5 /* simple-mtpfs-type-tmp-file.h */,
+				5211A605284930E5000C7CF5 /* simple-mtpfs-util.cpp */,
+				5211A612284930E6000C7CF5 /* simple-mtpfs-util.h */,
+			);
+			path = "simple-mtpfs-kfs";
+			sourceTree = "<group>";
+		};
+		5211A62B28493119000C7CF5 /* libmtp */ = {
+			isa = PBXGroup;
+			children = (
+				5211A62C28493119000C7CF5 /* libusb-glue.h */,
+				5211A62D28493119000C7CF5 /* mtpz.c */,
+				5211A62E28493119000C7CF5 /* gphoto2-endian.h */,
+				5211A62F28493119000C7CF5 /* libopenusb1-glue.c */,
+				5211A63028493119000C7CF5 /* unicode.c */,
+				5211A63128493119000C7CF5 /* util.c */,
+				5211A63228493119000C7CF5 /* libmtp.c */,
+				5211A63328493119000C7CF5 /* config.h */,
+				5211A63428493119000C7CF5 /* playlist-spl.c */,
+				5211A63528493119000C7CF5 /* libusb1-glue.c */,
+				5211A63628493119000C7CF5 /* ptp.h */,
+				5211A63728493119000C7CF5 /* ptp-pack.c */,
+				5211A63828493119000C7CF5 /* libmtp.sym */,
+				5211A63928493119000C7CF5 /* chdk_live_view.h */,
+				5211A63A28493119000C7CF5 /* unicode.h */,
+				5211A63B28493119000C7CF5 /* music-players.h */,
+				5211A63C28493119000C7CF5 /* mtpz.h */,
+				5211A63D28493119000C7CF5 /* libusb-glue.c */,
+				5211A63E28493119000C7CF5 /* playlist-spl.h */,
+				5211A63F28493119000C7CF5 /* libmtp.h */,
+				5211A64028493119000C7CF5 /* chdk_ptp.h */,
+				5211A64128493119000C7CF5 /* util.h */,
+				5211A64228493119000C7CF5 /* ptp.c */,
+				5211A64328493119000C7CF5 /* device-flags.h */,
+			);
+			path = libmtp;
+			sourceTree = "<group>";
+		};
+		5211A65C28493209000C7CF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5211A66A2849320A000C7CF5 /* libusb-1.0.0.dylib */,
+				5211A66C2849320A000C7CF5 /* dpfp */,
+				5211A66E2849320A000C7CF5 /* dpfp_threaded */,
+				5211A6702849320A000C7CF5 /* fxload */,
+				5211A6722849320A000C7CF5 /* hotplugtest */,
+				5211A6742849320A000C7CF5 /* listdevs */,
+				5211A6762849320A000C7CF5 /* sam3u_benchmark */,
+				5211A6782849320A000C7CF5 /* stress */,
+				5211A67A2849320A000C7CF5 /* testlibusb */,
+				5211A67C2849320A000C7CF5 /* xusb */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5211A68128493317000C7CF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5211A688284933A9000C7CF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5211A68D284933A9000C7CF5 /* KFS.framework */,
+				5211A68F284933A9000C7CF5 /* Test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5211A62328493109000C7CF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5211A65128493119000C7CF5 /* unicode.h in Headers */,
+				5211A64428493119000C7CF5 /* libusb-glue.h in Headers */,
+				5211A65628493119000C7CF5 /* libmtp.h in Headers */,
+				5211A65228493119000C7CF5 /* music-players.h in Headers */,
+				5211A65528493119000C7CF5 /* playlist-spl.h in Headers */,
+				5211A65028493119000C7CF5 /* chdk_live_view.h in Headers */,
+				5211A65828493119000C7CF5 /* util.h in Headers */,
+				5211A65728493119000C7CF5 /* chdk_ptp.h in Headers */,
+				5211A64628493119000C7CF5 /* gphoto2-endian.h in Headers */,
+				5211A65A28493119000C7CF5 /* device-flags.h in Headers */,
+				5211A64B28493119000C7CF5 /* config.h in Headers */,
+				5211A64E28493119000C7CF5 /* ptp.h in Headers */,
+				5211A65328493119000C7CF5 /* mtpz.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5211A5F828493029000C7CF5 /* simple-mtpfs-kfs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5211A5FE28493029000C7CF5 /* Build configuration list for PBXNativeTarget "simple-mtpfs-kfs" */;
+			buildPhases = (
+				5211A5F528493029000C7CF5 /* Sources */,
+				5211A5F628493029000C7CF5 /* Frameworks */,
+				5211A5F728493029000C7CF5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5211A691284933D0000C7CF5 /* PBXTargetDependency */,
+				5211A67E28493223000C7CF5 /* PBXTargetDependency */,
+			);
+			name = "simple-mtpfs-kfs";
+			productName = "simple-mtpfs-kfs";
+			productReference = 5211A5F928493029000C7CF5 /* simple-mtpfs-kfs */;
+			productType = "com.apple.product-type.tool";
+		};
+		5211A62628493109000C7CF5 /* libmtp_xcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5211A62828493109000C7CF5 /* Build configuration list for PBXNativeTarget "libmtp_xcode" */;
+			buildPhases = (
+				5211A62328493109000C7CF5 /* Headers */,
+				5211A62428493109000C7CF5 /* Sources */,
+				5211A62528493109000C7CF5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5211A6802849322F000C7CF5 /* PBXTargetDependency */,
+			);
+			name = libmtp_xcode;
+			productName = libmtp_xcode;
+			productReference = 5211A62728493109000C7CF5 /* liblibmtp_xcode.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5211A5F128493028000C7CF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "John Othwolo";
+				TargetAttributes = {
+					5211A5F828493029000C7CF5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5211A62628493109000C7CF5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 5211A5F428493028000C7CF5 /* Build configuration list for PBXProject "simple-mtpfs-kfs" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5211A5F028493028000C7CF5;
+			productRefGroup = 5211A5FA28493029000C7CF5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5211A688284933A9000C7CF5 /* Products */;
+					ProjectRef = 5211A687284933A9000C7CF5 /* KFS.xcodeproj */;
+				},
+				{
+					ProductGroup = 5211A65C28493209000C7CF5 /* Products */;
+					ProjectRef = 5211A65B28493209000C7CF5 /* libusb.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5211A5F828493029000C7CF5 /* simple-mtpfs-kfs */,
+				5211A62628493109000C7CF5 /* libmtp_xcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5211A66A2849320A000C7CF5 /* libusb-1.0.0.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = "libusb-1.0.0.dylib";
+			remoteRef = 5211A6692849320A000C7CF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5211A66C2849320A000C7CF5 /* dpfp */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dpfp;
+			remoteRef = 5211A66B2849320A000C7CF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5211A66E2849320A000C7CF5 /* dpfp_threaded */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dpfp_threaded;
+			remoteRef = 5211A66D2849320A000C7CF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5211A6702849320A000C7CF5 /* fxload */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fxload;
+			remoteRef = 5211A66F2849320A000C7CF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5211A6722849320A000C7CF5 /* hotplugtest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = hotplugtest;
+			remoteRef = 5211A6712849320A000C7CF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5211A6742849320A000C7CF5 /* listdevs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = listdevs;
+			remoteRef = 5211A6732849320A000C7CF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5211A6762849320A000C7CF5 /* sam3u_benchmark */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = sam3u_benchmark;
+			remoteRef = 5211A6752849320A000C7CF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5211A6782849320A000C7CF5 /* stress */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = stress;
+			remoteRef = 5211A6772849320A000C7CF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5211A67A2849320A000C7CF5 /* testlibusb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = testlibusb;
+			remoteRef = 5211A6792849320A000C7CF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5211A67C2849320A000C7CF5 /* xusb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = xusb;
+			remoteRef = 5211A67B2849320A000C7CF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5211A68D284933A9000C7CF5 /* KFS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KFS.framework;
+			remoteRef = 5211A68C284933A9000C7CF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5211A68F284933A9000C7CF5 /* Test */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Test;
+			remoteRef = 5211A68E284933A9000C7CF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5211A5F528493029000C7CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5211A61E284930E6000C7CF5 /* simple-mtpfs-mtp-device.cpp in Sources */,
+				5211A620284930E6000C7CF5 /* simple-mtpfs-sha1.cpp in Sources */,
+				5211A61F284930E6000C7CF5 /* simple-mtpfs-main.cpp in Sources */,
+				5211A619284930E6000C7CF5 /* simple-mtpfs-util.cpp in Sources */,
+				5211A622284930E6000C7CF5 /* simple-mtpfs-type-dir.cpp in Sources */,
+				5211A61A284930E6000C7CF5 /* simple-mtpfs-tmp-files-pool.cpp in Sources */,
+				5211A618284930E6000C7CF5 /* simple-mtpfs-type-file.cpp in Sources */,
+				5211A61D284930E6000C7CF5 /* simple-mtpfs-log.cpp in Sources */,
+				5211A61C284930E6000C7CF5 /* simple-mtpfs-type-tmp-file.cpp in Sources */,
+				5211A621284930E6000C7CF5 /* simple-mtpfs-libmtp.cpp in Sources */,
+				5211A61B284930E6000C7CF5 /* simple-mtpfs-kfs.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5211A62428493109000C7CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5211A64D28493119000C7CF5 /* libusb1-glue.c in Sources */,
+				5211A64828493119000C7CF5 /* unicode.c in Sources */,
+				5211A65928493119000C7CF5 /* ptp.c in Sources */,
+				5211A64928493119000C7CF5 /* util.c in Sources */,
+				5211A64A28493119000C7CF5 /* libmtp.c in Sources */,
+				5211A64C28493119000C7CF5 /* playlist-spl.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5211A67E28493223000C7CF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5211A62628493109000C7CF5 /* libmtp_xcode */;
+			targetProxy = 5211A67D28493223000C7CF5 /* PBXContainerItemProxy */;
+		};
+		5211A6802849322F000C7CF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libusb;
+			targetProxy = 5211A67F2849322F000C7CF5 /* PBXContainerItemProxy */;
+		};
+		5211A691284933D0000C7CF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KFS;
+			targetProxy = 5211A690284933D0000C7CF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5211A5FC28493029000C7CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5211A5FD28493029000C7CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5211A5FF28493029000C7CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW9NBAZ8M7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libmtp\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5211A60028493029000C7CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW9NBAZ8M7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libmtp\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5211A62928493109000C7CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW9NBAZ8M7;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libusb/\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5211A62A28493109000C7CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW9NBAZ8M7;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libusb/\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5211A5F428493028000C7CF5 /* Build configuration list for PBXProject "simple-mtpfs-kfs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5211A5FC28493029000C7CF5 /* Debug */,
+				5211A5FD28493029000C7CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5211A5FE28493029000C7CF5 /* Build configuration list for PBXNativeTarget "simple-mtpfs-kfs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5211A5FF28493029000C7CF5 /* Debug */,
+				5211A60028493029000C7CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5211A62828493109000C7CF5 /* Build configuration list for PBXNativeTarget "libmtp_xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5211A62928493109000C7CF5 /* Debug */,
+				5211A62A28493109000C7CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5211A5F128493028000C7CF5 /* Project object */;
+}

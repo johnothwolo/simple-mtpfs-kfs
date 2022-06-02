@@ -1,0 +1,6 @@
+[submodule "libusb"]
+	path = libusb
+	url = https://github.com/libusb/libusb.git
+[submodule "kfs"]
+	path = kfs
+	url = https://github.com/johnothwolo/kfs
